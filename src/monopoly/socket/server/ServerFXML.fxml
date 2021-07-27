@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="monopoly.socket.server.ServerFXMLController">
+   <children>
+      <Button fx:id="iniciaServer" layoutX="374.0" layoutY="342.0" mnemonicParsing="false" onAction="#iniciarServer" text="Iniciar Server" />
+      <TextField fx:id="port" layoutX="30.0" layoutY="342.0" promptText="port" />
+      <TextField fx:id="nJogadores" layoutX="201.0" layoutY="342.0" promptText="numero de jogadores" />
+   </children>
+</AnchorPane>

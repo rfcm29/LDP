@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monopoly.game.JogoControllerController">
+    <children>
+      <Button id="lancarDadosButton" fx:id="lancarDadosButton" layoutX="161.0" layoutY="640.0" mnemonicParsing="false" onAction="#lancarDados" text="Lançar Dados" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="161.0" />
+      <Button id="terminarTurnoButton" fx:id="terminarTurnoButton" layoutX="302.0" layoutY="640.0" mnemonicParsing="false" onAction="#terminarTurno" text="Terminar Turno" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="302.0" />
+      <Label id="dinheiroJogador" fx:id="dinheiroJogador" layoutX="657.0" layoutY="183.0" prefHeight="17.0" prefWidth="496.0" style="-fx-background-color: rgb(152,225,240);" text="Label" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="100.0" />
+      <Pane id="infoCasa" layoutX="657.0" layoutY="484.0" prefHeight="254.0" prefWidth="496.0" style="-fx-background-color: rgb(152,225,240);" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="40.0">
+         <children>
+            <Label id="preco" fx:id="preco" layoutX="139.0" layoutY="60.0" />
+            <Button id="comprarButton" fx:id="comprarButton" layoutX="73.0" layoutY="200.0" mnemonicParsing="false" text="Comprar " />
+            <Button id="hipotecarButton" fx:id="hipotecarButton" layoutX="215.0" layoutY="200.0" mnemonicParsing="false" text="Hipotecar" />
+            <Button id="construirButton" fx:id="construirButton" layoutX="358.0" layoutY="200.0" mnemonicParsing="false" text="Construir" />
+            <Label id="aluguer" fx:id="aluguer" layoutX="139.0" layoutY="89.0" />
+            <Label id="hipoteca" fx:id="hipoteca" layoutX="139.0" layoutY="121.0" />
+            <Label id="precoConstrucao" fx:id="precoConstrucao" layoutX="330.0" layoutY="60.0" />
+            <Label id="nCasas" fx:id="nCasas" layoutX="330.0" layoutY="89.0" />
+            <Label id="dono" fx:id="dono" layoutX="330.0" layoutY="121.0" />
+            <Label fx:id="nomeCasa" layoutX="234.0" layoutY="24.0" text="Label" />
+         </children>
+      </Pane>
+      <HBox layoutX="40.0" layoutY="83.0" prefHeight="31.0" prefWidth="480.0" spacing="5.0">
+         <children>
+            <Label fx:id="jogador1" text="Jogador 1" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="416.0" layoutY="25.0" prefHeight="44.0" prefWidth="249.0" style="-fx-font-weight: bold;" text="MONOPOLY">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="dados" layoutX="259.0" layoutY="623.0" text="Label" />
+      <TableView layoutX="544.0" layoutY="138.0" prefHeight="200.0" prefWidth="496.0" AnchorPane.rightAnchor="40.0">
+        <columns>
+          <TableColumn prefWidth="113.0" text="ID" />
+          <TableColumn prefWidth="344.0" text="NOME" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="499.0" fitWidth="480.0" layoutX="40.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0">
+         <image>
+            <Image url="@tabuleiro.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
